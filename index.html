@@ -3,14 +3,32 @@
 <html lang="en">
 
 <head>
-
-  <link rel="stylesheet" href="./style.css">
-
+    <title>Bret's Bing Search</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css" integrity="sha384-N1wslN47t+AsdHxUFTElGU0reunUcBrGoRvXh8cQPqwvaDTsbvDCi8uURiq60zdv" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+        
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <h1 onclick="changeBackground()">Bret's Bing Search</h1>
+
+        <input type="text" id="query" name="query">
+        <input class="ui-button ui-widget ui-corner-all" type="button" value="Search" onclick="apiSearch()" ;>
+        <br />
+        <br />
+        <input id="opener" class="ui-button ui-widget ui-corner-all" type="button" value="Show Current Time" onclick="show_time();">
+        <div id="searchResults">
+
+        </div>
+        <div id="time" title="Current Time:"></div>
+
+    <script type="text/javascript" src="./script.js">
+
+    </script>
 
 </body>
 
